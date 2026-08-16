@@ -8,3 +8,5 @@
 {"v": "1.2", "ts": "2026-08-17T04:17:42+09:00", "project": "tegaki-yomi", "loop_id": "loop_001", "event": "test_run", "data": {"command": "npm run verify (vitest --coverage)", "passed": 11, "failed": 0}}
 {"v": "1.2", "ts": "2026-08-17T04:17:42+09:00", "project": "tegaki-yomi", "loop_id": "loop_001", "event": "stage_end", "data": {"stage": 5, "stage_name": "検証", "result": "pass"}}
 {"v": "1.2", "ts": "2026-08-17T04:17:43+09:00", "project": "tegaki-yomi", "loop_id": "loop_001", "event": "stage_end", "data": {"stage": 6, "stage_name": "文書同期", "result": "pass"}}
+{"v": "1.2", "ts": "2026-08-17T04:17:43+09:00", "project": "tegaki-yomi", "loop_id": "loop_001", "event": "commit", "data": {"sha": "ce83afc", "kind": "feat"}}
+{"v": "1.2", "ts": "2026-08-17T04:17:43+09:00", "project": "tegaki-yomi", "loop_id": "loop_001", "event": "loop_end", "data": {"outcome": "success", "failure_count": 0, "summary": "二実装照合オラクル成立(Python 98.04% / TS ロジット・精度一致)。テスト 11 件 green・verify PASS"}}
