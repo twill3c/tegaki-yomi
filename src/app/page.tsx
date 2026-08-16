@@ -7,6 +7,7 @@ import { ResultPanel } from "@/components/ResultPanel";
 import { b64ToBytes } from "@/core/b64";
 import { FIXTURES, MODEL, forward, type ForwardResult } from "@/core/model";
 import { preprocess } from "@/core/preprocess";
+import { FOOTER_LINKS } from "@/lib/links";
 
 const CANVAS = 280;
 
@@ -79,6 +80,18 @@ export default function Home() {
       <section className="panel">
         <HiddenViz model={MODEL} result={result} />
       </section>
+
+      <footer className="footer">
+        {FOOTER_LINKS.map((l, i) => (
+          <span key={l.href}>
+            {i > 0 && " ・ "}
+            <a href={l.href} target="_blank" rel="noreferrer">
+              {l.label}
+            </a>
+            {l.label === "MIT License" && " © 2026 坂田哲朗"}
+          </span>
+        ))}
+      </footer>
     </main>
   );
 }

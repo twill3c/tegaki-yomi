@@ -7,3 +7,5 @@
 {"v": "1.2", "ts": "2026-08-17T04:22:11+09:00", "project": "tegaki-yomi", "loop_id": "loop_002", "event": "test_run", "data": {"command": "npm run verify (vitest --coverage)", "passed": 11, "failed": 0}}
 {"v": "1.2", "ts": "2026-08-17T04:22:11+09:00", "project": "tegaki-yomi", "loop_id": "loop_002", "event": "stage_end", "data": {"stage": 5, "stage_name": "検証", "result": "pass"}}
 {"v": "1.2", "ts": "2026-08-17T04:22:12+09:00", "project": "tegaki-yomi", "loop_id": "loop_002", "event": "stage_end", "data": {"stage": 6, "stage_name": "文書同期", "result": "pass"}}
+{"v": "1.2", "ts": "2026-08-17T04:22:12+09:00", "project": "tegaki-yomi", "loop_id": "loop_002", "event": "commit", "data": {"sha": "fd47f32", "kind": "feat"}}
+{"v": "1.2", "ts": "2026-08-17T04:22:12+09:00", "project": "tegaki-yomi", "loop_id": "loop_002", "event": "loop_end", "data": {"outcome": "success", "failure_count": 0, "summary": "認識 UI 完成。テスト 11 件 green・verify PASS・実機確認済み(HC-002 予防適用 3 作連続で UI 失敗ゼロ)"}}
