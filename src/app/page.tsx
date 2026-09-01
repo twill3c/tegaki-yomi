@@ -81,6 +81,20 @@ export default function Home() {
         <HiddenViz model={MODEL} result={result} />
       </section>
 
+      <p className="attr">
+        お手本と学習データは MNIST database of handwritten digits(Yann LeCun,
+        Corinna Cortes, Christopher J.C. Burges)。同梱している 520 枚の画像は
+        CC BY-SA 3.0 を前提に扱う(配布元により表示が割れているため厳しい方に寄せた —{" "}
+        <a
+          href="https://github.com/twill3c/tegaki-yomi/blob/main/NOTICE"
+          target="_blank"
+          rel="noreferrer"
+        >
+          NOTICE
+        </a>
+        )。前処理・推論・可視化のコードは MIT。
+      </p>
+
       <footer className="footer">
         {FOOTER_LINKS.map((l, i) => (
           <span key={l.href}>
