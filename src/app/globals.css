@@ -185,6 +185,21 @@ input[type="range"] {
   color: inherit;
 }
 
+/* MNIST の帰属表示。固定フッタの直上に置く */
+.attr {
+  max-width: 72ch;
+  margin: 24px auto 0;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+  font-size: 0.74rem;
+  line-height: 1.75;
+  color: var(--fg-muted);
+}
+
+.attr a {
+  color: inherit;
+}
+
 .crit-note {
   font-size: 0.78rem;
   color: var(--fg-muted);

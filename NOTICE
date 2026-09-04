@@ -1,0 +1,44 @@
+NOTICE — tegaki-yomi(手書き読み)
+
+このアプリは配布物に **MNIST の画像そのもの**を含みます。
+`src/core/model/fixtures.json` の内訳:
+
+  - `samples`          照合用フィクスチャ 20 件(28×28 のピクセルとラベル)
+  - `testSubset`       「お手本を読み込む」用のテスト部分集合 500 件(同上)
+  - `src/core/model/weights.json` は MNIST 60,000 件で学習した重み(派生物)
+
+--------------------------------------------------------------------
+MNIST database of handwritten digits
+--------------------------------------------------------------------
+
+Yann LeCun (Courant Institute, NYU), Corinna Cortes (Google Labs),
+Christopher J.C. Burges (Microsoft Research).
+NIST Special Database 1 / 3 を再構成した派生著作物。
+
+**配布元によってライセンス表示が割れている。**
+
+  - 原配布ページ(yann.lecun.com/exdb/mnist)および TensorFlow Datasets カタログ:
+    **Creative Commons Attribution-Share Alike 3.0(CC BY-SA 3.0)**、
+    著作権は LeCun と Cortes が保持すると表示
+  - HuggingFace `ylecun/mnist` のデータセットカード: **MIT Licence** と表示
+
+本リポジトリの取得経路は**記録されていない**。学習データは `training/data/` に置く
+運用で、このディレクトリは `.gitignore` されており、取得元 URL もコード内に無い
+(`training/train_mnist.py` はローカルの `*.gz` を読むだけ)。したがって
+「どちらの条件で受け取ったか」を後から確定できない。
+
+**そこで、同梱している 520 枚の画像については厳しい方(CC BY-SA 3.0)を前提に扱う。**
+再配布する場合は帰属表示と継承条件を維持すること。
+
+未解決の論点として記録しておく:
+
+  - CC BY-SA 3.0 の継承が、画像そのものではなく**学習済み重み**
+    (`weights.json`)にまで及ぶかは定まっていない。本アプリはこれを主張も否定もしない
+  - 画像の同梱をやめて実行時取得または再生成に切り替えれば、この論点は消える。
+    出荷物の作りに関わる判断なので、ここでは選択肢として記録するに留める
+
+--------------------------------------------------------------------
+本アプリ自身のコード
+--------------------------------------------------------------------
+
+LICENSE を参照(MIT)。前処理・推論・可視化・学習スクリプトはすべて自作。
